@@ -1,0 +1,408 @@
+
+/*
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video */
+
+/*fade out animation*/
+@keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  h1 {
+    animation: fadeOut 5s ease;
+  }
+
+/*backface-visibility card flipping*/
+@keyframes spin {
+    from {
+      transform: rotateY(0);
+    }
+    to {
+      transform: rotateY(1turn);
+    }
+  }
+  
+/*animatble flowing- "a showcase...*/
+@keyframes animation {
+    from {
+      letter-spacing: 10px;
+    }
+    to {
+      letter-spacing: 0;
+    }
+  }
+  
+  .animated {
+    animation: animation 10s ease infinite;
+  }
+  
+a{
+    color: black;
+}
+
+  h4 {
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .card {
+    animation: spin 8s ease;
+    animation-iteration-count: infinite;
+  }
+  
+  .container {
+    perspective: 1000px;
+    
+  }
+  
+/*background-clip...h5*/ 
+.clip-text {
+    background: url(http://media.giphy.com/media/yv1ggi3Cbase05a8iS/giphy.gif);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; 
+    opacity: 0.2; 
+    width: 300px;
+    height: 100px;
+    box-sizing: border-box;
+    font-size: 58px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    flex-shrink: 0;
+  }
+/*email part and contact*/
+  .clip-tex {
+    background: url(https://media.giphy.com/media/YmjleYhDTUiYw/giphy.gif);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    background-color: blue;
+    -webkit-background-clip: text;
+    color:transparent; 
+    opacity: 0.2; 
+    width: 300px;
+    height: 100px;
+    box-sizing: border-box;
+    font-size: 58px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    flex-shrink: 0;
+    
+  }
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: 15px solid;
+    border-image:url("image path") 10% round;
+}
+
+
+
+body{
+    line-height: 1;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+blockquote, q{
+    quotes: none;
+}
+
+blockquote:efore, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table{
+    border-collapse: collapse;
+    border: spacing 0;
+}
+/*color of text(h1,p), background, in the middle-align*/
+body{
+    color: rgb(3, 11, 9);
+    background-color: rgb(216, 224, 226);
+    text-align: center;
+    
+}
+
+/*CONTACT ME FORM */
+/* Basic Grey */
+.basic-grey {
+	margin-left:auto;
+	margin-right:auto;
+    max-width: 500px;
+    background: #F7F7F7;
+    padding: 25px 15px 25px 10px;
+    font: 12px Georgia, "Times New Roman", Times, serif;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #E4E4E4;
+}
+.basic-grey h1 {
+    font-size: 25px;
+    padding: 0px 0px 10px 40px;
+    display: block;
+    border-bottom:1px solid #E4E4E4;
+    margin: -10px -15px 30px -10px;;
+    color: #888;
+}
+.basic-grey h1>span {
+    display: block;
+    font-size: 11px;
+}
+.basic-grey label {
+    display: block;
+    margin: 0px;
+}
+.basic-grey label>span {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+    color: #888;
+}
+.basic-grey input[type="text"], .basic-grey input[type="email"], .basic-grey textarea, .basic-grey select {
+	border: 1px solid #DADADA;
+	color: #888;
+	height: 30px;
+	margin-bottom: 16px;
+	margin-right: 6px;
+	margin-top: 2px;
+	outline: 0 none;
+	padding: 3px 3px 3px 5px;
+	width: 70%;
+	font-size: 12px;
+	line-height:15px;
+	box-shadow: inset 0px 1px 4px #ECECEC;
+	-moz-box-shadow: inset 0px 1px 4px #ECECEC;
+	-webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}
+.basic-grey textarea{
+	padding: 5px 3px 3px 5px;
+}
+.basic-grey select {
+    background: #FFF url('down-arrow.png') no-repeat right;
+    background: #FFF url('down-arrow.png') no-repeat right;
+    appearance:none;
+    -webkit-appearance:none; 
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 70%;
+    height: 35px;
+	line-height: 25px;
+}
+.basic-grey textarea{
+    height:100px;
+}
+.basic-grey .button {
+	background: #130202;
+	border: none;
+	padding: 10px 25px 10px 25px;
+	color: #FFF;
+	box-shadow: 1px 1px 5px #B6B6B6;
+	border-radius: 3px;
+	text-shadow: 1px 1px 1px #9E3F3F;
+	cursor: pointer;
+}
+.basic-grey .button:hover {
+    background: #CF7A7A
+}
+
+
+
+/*type of html*/
+html{
+    box-sizing: border-box;
+    font-size: 18pt;
+    scroll-behavior: smooth;
+    
+}
+/*hover aware effect*/
+.btn{
+    text-decoration: none;
+    padding: 24px 72px;
+    background-color: #4e44df;
+    color: #fff;
+    border-radius: 100px; /*make boder round with something inside*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    transform: translate(-50%, -50%);
+    background-image: radial-gradient(circle closest-side, #08172e, transparent);
+    width: 0; height: 0;
+    transition: width 0.3s ease, height 0.3s ease;
+    z-index: -1;
+}
+.btn:hover::before{width: 250px; height: 250px;
+        
+}
+
+.content img{
+   filter: drop-shadow(2px 4px 8px #585858);
+}
+
+.div{
+    position:fixed;
+    z-index: 1;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    height: 100%;
+    width: 100%;
+}
+
+
+h1{
+    font-size: 36px;
+    color:#000;
+    font-weight: 800;
+}
+
+h1:hover{color: rgb(212, 210, 225);
+    transition: all 0.3s ease;
+}
+h1::first-letter{
+    display: block;
+    float: auto;
+    margin: 3px;
+    font-size: 200%;
+}
+h2:before {
+    content: "";
+    color: black;
+    
+}
+h3{
+    text-align: center;
+    color: blue;
+    
+}
+
+/*line to divide contents*/
+hr.style-six{
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgb(3, 11, 9);
+    border-bottom: 1px solid solid rgb(255,255,255,0.3s);
+}
+
+.icon{
+    background:aqua;
+    cursor: pointer;
+    display: block;
+    height: 24px;
+    padding: 16px;
+    width: 24px;
+}
+
+label.icon{
+    position: fixed;
+    z-index: 200;
+}
+
+.icon .menu,
+.icon .menu::before,
+.icon .menu::after{
+    background: #9FB1BD;
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    transition: background ease .3s, top ease .3s .3s, transform ease .3s;
+}
+
+/*main top picture of me*/
+.-shape-outside {
+    shape-outside: circle(50%);
+    float: none;
+  }
+  
+
+
+  .circle {
+    width: 260px;
+    height: 160px;
+    background-color: rgb(16, 1, 1);
+    border-radius: 60%;
+    margin-right: 24px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    
+  }
+  
+  div {
+    text-align: center;
+    
+  }
+  
+  html, body {
+    height: auto;
+  }
+
+/* a box(or table) around subject to read*/
+table {
+    width: 400px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: auto;
+  }
+  td{
+    border: 1px solid black;
+  }
+  body{
+    font-family: courier new;
+  }
+
+p:after{
+    content: '';
+    color: black;
+}
+
+/*box arounf the whole html content*/
+#wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid black;
+    height: 150px;
+    width: 2600px;
+  }
+  
+  #center {
+    margin: auto;
+    background: red;
+    height: 20px;
+    width: 20px;
+  }
+/* Basic */
